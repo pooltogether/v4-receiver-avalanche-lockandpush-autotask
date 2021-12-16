@@ -1,4 +1,4 @@
-# Receiver Avalanche Mainnet LockAndPush V1.1.0
+# Receiver Avalanche LockAndPush V1.1.0
 
 **Environment Variable** 
 ```.sh 
