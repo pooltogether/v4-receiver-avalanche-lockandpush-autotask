@@ -1,6 +1,6 @@
 {
-  "name": "v4-receiver-polygon-lockandpush-autotask",
-  "description": "Defender Autotask to execute Polygon Mainnet transactions",
+  "name": "v4-receiver-avalanche-lockandpush-autotask",
+  "description": "Defender Autotask to execute Avalanche Mainnet transactions",
   "version": "0.1.0",
   "type": "commonjs",
   "main": "src/cli.js",
