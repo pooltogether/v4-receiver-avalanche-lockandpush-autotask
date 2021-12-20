@@ -1,6 +1,6 @@
 import { Relayer } from 'defender-relay-client'
 import { receiverDrawLockAndNetworkTotalSupplyPush } from '@pooltogether/v4-autotask-lib'
-import {mainnet as mainnetContractList } from '@pooltogether/v4-pool-data'
+import { mainnet as mainnetContractList } from '@pooltogether/v4-pool-data'
 
 export async function handler(event: any) {
   const relayer = new Relayer(event);
