@@ -32,15 +32,16 @@ export async function handler(event: any) {
   try {
     const transactionPopulated = await receiverDrawLockAndNetworkTotalSupplyPush(mainnetContractList, config)
     if (transactionPopulated) {
+      console.log(transactionPopulated)
       // Execute Transaction to push the Draw struct and TotalNetworkSupply to Ethereum Mainnet
-      let transactionSentToNetwork = await relayer.sendTransaction({
-        data: transactionPopulated.data,
-        to: transactionPopulated.to,
-        gasLimit: 500000,
-        speed: 'fast'
-      });
+      // let transactionSentToNetwork = await relayer.sendTransaction({
+      //   data: transactionPopulated.data,
+      //   to: transactionPopulated.to,
+      //   gasLimit: 500000,
+      //   speed: 'fast'
+      // });
 
-      console.log('TransactionHash:', transactionSentToNetwork.hash)
+      // console.log('TransactionHash:', transactionSentToNetwork.hash)
     } else {
       throw new Error('DrawBeacon: Transaction not populated')
     }
