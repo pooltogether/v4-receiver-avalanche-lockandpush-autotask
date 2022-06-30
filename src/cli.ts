@@ -4,7 +4,7 @@ import { handler } from './handler'
 if (require.main === module) {
   const {
     RELAYER_API_KEY,
-    RELAYER_API_SECRET,
+    RELAYER_API_SECRET: apiSecret,
     ETHEREUM_MAINNET_PROVIDER_URL: ethereumMainnetProviderURL,
     POLYGON_MAINNET_PROVIDER_URL: polygonMainnetProviderURL,
     AVALANCHE_MAINNET_PROVIDER_URL: avalancheMainnetProviderURL,
