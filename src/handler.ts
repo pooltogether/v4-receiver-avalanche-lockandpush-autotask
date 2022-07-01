@@ -25,6 +25,10 @@ export async function handler(event: any) {
       {
         chainId: 43114,
         providerUrl: event.secrets.avalancheMainnetProviderURL,
+      },
+      {
+        chainId: 10,
+        providerUrl: event.secrets.optimismMainnetProviderURL,
       }
     ]
   }
